@@ -1,0 +1,108 @@
+
+.t-heading span:nth-child(2){
+    color: var(--orange);
+}
+.t-wrapper{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh;
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+
+.t-heading{
+    position: relative;
+    margin-top: -28rem;
+}
+
+.t-heading>*{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.t-blur1{
+    position: absolute;
+    width: 16rem;
+    height: 8em;
+    border-radius: 10%;
+    z-index: -9;
+    top: 11rem;
+    left: -3rem;
+    filter: blur(150px);
+}
+
+.t-blur2{
+    position: absolute;
+    width: 16rem;
+    height: 8em;
+    border-radius: 10%;
+    z-index: -9;
+    top: 9rem;
+    left: 28rem;
+    filter: blur(150px);
+}
+
+.testimonial{
+    margin-top: 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 48rem;
+    height: 24rem;
+    /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.26);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 7px solid var(--blueCard)
+}
+
+.t-wrapper .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial .swiper-slide{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .swiper .swiper-slide>img{
+    border-radius: 100%;
+    top: -2rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+p{
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.rate{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+h6{
+    font-size: 1.5rem;
+}

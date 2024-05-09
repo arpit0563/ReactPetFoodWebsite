@@ -1,0 +1,117 @@
+.category{
+    margin-top: 1rem;
+}
+
+.category>h2{
+    font-size: 3rem;
+}
+
+.category>p{
+    font-size: 1.3rem;
+}
+
+span{
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.category-col:hover{
+    transform: scale(1.1);
+    transition: 0.3s linear;
+}
+
+.category-img{
+    margin-top: 2rem;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+}
+
+.poster-img {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.poster1{
+    width: 35rem;
+    height: 20rem;
+    background-image: url(../../image/postercat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    text-align: left;
+}
+
+.poster2{
+    width: 35rem;
+    height: 20rem;
+    background-image: url(../../image/posterdog.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2rem;
+    text-align: left;
+}
+
+.poster-btn{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #000814;
+    border: none;
+    border-radius: 10px;
+}
+
+.offer{
+    margin-top: 3rem;
+}
+
+/* .poster .poster-c>*{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.poster {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.poster .container {
+    display: flex;
+    justify-content: space-between; /* Space the items evenly horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.poster .poster1,
+.poster .poster2 {
+    flex-basis: 45%; /* Set the initial width of each poster to 45% */
+}
+
+@media (max-width: 768px) {
+    .poster{
+        flex-basis: 100%; /* Set the width of posters to 100% on smaller screens */
+        justify-content: space-between; /* Space the items evenly horizontally */
+        align-items: center;
+        margin-bottom: 2rem; 
+        
+    }
+}
+
+/* @media (max-width: 768px) {
+    .poster .poster1,
+    .poster .poster2 {
+        flex-basis: 100%; 
+        justify-content: space-between; 
+        align-items: center;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+} */

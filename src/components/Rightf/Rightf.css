@@ -1,0 +1,24 @@
+
+.rightf{
+    margin-top: 5rem;
+    /* background-color: #f6fff8; */
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.rightf-img{
+    height: 30rem;
+    margin-left: 5rem;
+}
+
+.rightf-img:hover{
+    transform: scale(1.01);
+    transition: 0.2s linear;
+}
+
+.rightf>p{
+    font-size: 1rem;
+}

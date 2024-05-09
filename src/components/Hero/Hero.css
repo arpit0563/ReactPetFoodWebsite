@@ -1,0 +1,130 @@
+body {
+    overflow-x: hidden;
+}
+
+.hero{
+    
+    /* position: relative; */
+}
+.hero-bg {
+    background-color: #FF407D;
+    width: 100vw;
+    /* height: 90%; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.hero-left {
+    margin-top: 2rem;
+    margin-left: 5%; 
+}
+
+
+.hero-left {
+    margin-top: 1.5rem;
+}
+
+span:nth-child(1){
+    font-size: 2.2rem;
+    color: #f8fc01;
+    font-weight: 700;
+}
+
+.hero-left span:nth-of-type(2) {
+    font-size: 2.2rem;
+    color: #003566;
+    font-weight: 700;
+  }
+
+.hero-left > button {
+    margin-top: -1rem;
+    padding: 0.8rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px #000000;
+}
+
+.hero-left > button:hover {
+    transition: 2ms ease-in;
+    background-color: #7F27FF;
+    color: white;
+}
+
+.hero-right {
+    margin-left: 15%; /* Use percentage instead of fixed value */
+    /* margin-top: 4rem; */
+}
+
+.hero-right > .img1 {
+    margin-top: 1rem;
+    width: 80%; 
+    height:  100%; 
+    vertical-align: middle;
+}
+
+.wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100vw;
+    margin-top: -15rem;
+    position: relative;
+}
+
+.wave .img1{
+width: 100svw;
+}
+
+@media screen and (max-width: 600px){
+    /* .hero-bg{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .hero, .hero-bg, .hero-left{
+        margin-top: 2.5rem;
+    } */
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-left,
+    .hero-right {
+        margin-left: 0;
+        text-align: center;
+        display: grid;
+    }
+
+    .hero-right {
+        margin-top: 2rem;
+    }
+
+    .hero-left,
+    .hero-right > .img1 {
+        width: 80%; /* Adjust width for smaller screens */
+        margin: 0 auto; /* Center elements */
+    }
+
+    .hero-left span:nth-of-type(1),
+    .hero-left span:nth-of-type(2) {
+        font-size: 1.8rem;
+    }
+
+    .hero-left > button {
+        width: 100%; /* Make button full width */
+    }
+
+    .wave {
+        margin-top: -10rem; /* Adjust margin */
+    }
+}
